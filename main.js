@@ -54,7 +54,7 @@ function myKeyDown(e)
 		canvas.remove(ballObj);
 		document.getElementById("hd3").innerHTML="Você atingiu o objetivo!!!";
 		document.getElementById("myCanvas").style.borderColor="red";
-	
+	}
 	else{
 		if(keyPressed == '38')
 		{
@@ -64,7 +64,7 @@ function myKeyDown(e)
 		if(keyPressed == '40')
 		{
 			down();
-[[[console.log("down");
+console.log("down");
 		}
 		if(keyPressed == '37')
 		{
@@ -115,7 +115,7 @@ function myKeyDown(e)
 		if(ballX <=1050)
 		{
 			// Escreva o código para mover a bola para a direita.
-			ballX=ballX-blockImageWidth;
+			ballX=ballX+blockImageWidth;
         canvas.remove(ballObj);
         newImage();
 		}
